@@ -1,0 +1,9 @@
+<ion-grid>
+	<ion-row>
+		<ion-col *ngFor="let page of pages">
+			<button ion-button full (click)="openPage(page.component)">
+				{{page.title}}
+			</button>
+		</ion-col>
+	</ion-row>
+</ion-grid>
